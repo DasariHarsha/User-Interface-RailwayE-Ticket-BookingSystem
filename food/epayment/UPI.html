@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        @import url("style.UPI.css");
+    </style>
+
+    <body>
+        <form name="myform" onsubmit="return validate_upi()" action="ticket.html" target="_blank">
+
+        <div class="container">
+            <div class="price">
+               
+            </div>
+            <div class="card__container">
+                <div class="card">
+                    <div class="row paypal">
+                        <div class="left">
+                           
+                            <label for="pp">UPI Payment</label>
+                        </div>
+                    
+                    </div>
+                    <div class="row cardholder">
+                        <div class="info">
+
+                            <pre>
+                        
+
+
+                             
+                                
+
+                                <table cellspacing="30" cellpadding="0" > 
+                                    <tr>
+
+
+                                <td class="zoom"><img src="phonepe.png" alt="phonepe" style="width:65px;height:65px; border-radius: 50px; "></td>       <td class="zoom"><img src="paytm.png" alt="paytm" style="width:65px;height:65px;  border-radius: 50px;" ></td>       <td class="zoom"><img src="googlepay.png" alt="paytm" style="width:65px;height:65px; border-radius: 50px;"; ></td>   
+
+                                    </tr>
+                                </table>
+                           
+        
+
+                    
+                        </pre>
+                        </div>
+                    </div>
+                    <div class="row number">
+                        <div class="info">
+                         
+                           <label for="cardnumber" style="font-family: 'Times New Roman', Times, serif;">UPI ID</label>
+                               <input id="cardnumber" type="text" name="upi"  maxlength="14"  placeholder="8888-8888-88@-abc"/><p style="color: red; font-size: small; text-align: center; " id="message"></p>
+                     
+                            </div>
+              
+            </div>
+            <div class="button">
+                <button type="submit" ><i class="ion-locked"></i> Confirm and Pay</button>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        function validate_upi()
+            {
+                 let x = document.forms["myform"]["upi"].value;
+                 
+            if(x=="" ){
+            document.getElementById("message").innerHTML = "**Enter UPI";
+            return false;
+           }
+           if (isNaN(x) || x.length<10) {
+            document.getElementById("message").innerHTML = "**Invalid UPI";
+            return false;
+             }
+             
+        }
+    </script>
+    </body>
+</html>

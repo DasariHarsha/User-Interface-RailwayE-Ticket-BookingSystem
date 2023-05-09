@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+  <html lang="en">
+        <head>
+            <title> Railway eTicketing system </title>
+             <meta charset = utf-8>
+             <link rel="stylesheet" href="AvailableTrains.css">
+             <style>
+                 td {border: 0px #DDD solid;  cursor: pointer;}
+
+.selected {
+    background-color: brown;
+    color: #FFF;
+}
+             </style>
+             
+             </head>
+             <body>
+
+                
+                
+                <center> <br>  <img src="logo.png" alt="logo" width="100" height="90" style="float: left;"> <div class="wrapper"><h2 class="headline ">Available Trains</h2>
+                  
+                </div><br><br>
+                    <button class="btn"><a href="main.html" class="pn">HOME</a></button>
+                    <button class="btn"><a href="login.html" class="pn">LOGIN</a></button>
+                    <button class="btn"><a href="PNR.html" class="pn">PNR</a></button>
+                    <button class="btn"><a href="food/foodmainpage.html" class="pn">FOOD</a></button>
+                    <button class="btn"><a href="contactus.html" class="pn">CONTACT US</a></button>
+                    
+                  </center>
+<form>              
+<table>
+    <thead>
+      <tr> 
+        <th>Train No.
+        <th>Train Name
+        <th>From
+        <th>To
+        <th>Departure time
+        <th>Arrival time
+         
+        <th>Availability
+        
+    </thead>
+    <tbody>
+      <tr>
+        
+        <td><input type="radio" name="a" required>  02773
+        <td>Secunderabad covid 19 spl
+        <td>Visakhapatnam
+        <td>Secunderabad
+        <td>05:45
+        <td>18:00
+        
+         
+        <td><a class="btnstyle" onclick="document.getElementById('1').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="1"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+   
+   
+      <tr>
+        <td><input type="radio" name="a" required> 18456
+        <td>East coast exp
+        <td>Howrah jn
+        <td>Secunderabad
+        <td>18:25
+        <td>11:45
+        <td><a class="btnstyle" onclick="document.getElementById('2').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="2"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+      <tr class="disabled">
+        <td> <input type="radio" name="a" required disabled={checkStat == 1 ? true : false}/>02405
+        <td>Ratnachal exp
+        <td>Vijayawada
+        <td>visakhapatnam
+        <td>00:45
+        <td>12:00
+        <td><a class="btnstyle" onclick="document.getElementById('3').innerHTML = getRndInteger(0 , 0)">Check</a>
+  
+  <p id="3"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+      <tr>
+        <td><input type="radio" name="a" required> 17488
+        <td>Tirumala exp
+        <td>Visakhapatnam
+        <td>Tirupathi
+        <td>11:05
+        <td>06:25
+        <td><a class="btnstyle" onclick="document.getElementById('4').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="4"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+      <tr>
+        <td><input type="radio" name="a" required> 12458
+          <td>Shiridi spl exp
+        <td>Kakinada port 
+        <td>Sainagar
+        
+        <td>02:45
+        <td>16:15
+        <td><a class="btnstyle" onclick="document.getElementById('5').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="5"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+      <tr class="disabled">
+        <td><input type="radio" name="a" required disabled={checkStat == 1 ? true : false}/> 12217
+           <td>Prasanthi exp
+        <td>Bhuvaneswar 
+        <td>KSR Bengaluru
+       
+        <td>14:45
+        <td>14:20
+        <td><a class="btnstyle" onclick="document.getElementById('6').innerHTML = getRndInteger(0,0)">Check</a>
+  
+  <p id="6"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+      <tr>
+        <td><input type="radio" name="a" required> 15125
+          <td>Konark exp
+        <td>Bhuvaneswar 
+        <td>Mumbai terminl
+        
+        <td>05:55
+        <td>13:50
+        <td><a class="btnstyle" onclick="document.getElementById('7').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="7"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+      <tr>
+        <td><input type="radio" required name="a"> 12235
+        <td>RAajadhani exp
+        <td>Dibrugarh
+        <td>New delhi
+        <td>18:50
+        <td>00:10
+        <td><a class="btnstyle" onclick="document.getElementById('8').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="8"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+      <tr>
+        <td><input type="radio" name="a" required> 16438
+        <td>Falaknuma spl
+        <td>Howrah jn 
+        <td>Secundrabad
+        <td>08:50
+        <td>07:10
+        <td><a class="btnstyle" onclick="document.getElementById('9').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="9"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+           <tr>
+        <td><input type="radio" name="a" required> 02727
+        <td>godavari spl
+        <td>visakhapatnam jn 
+        <td>Hyderabad Deccan
+        <td>14:50
+        <td>09:10
+        <td><a class="btnstyle" onclick="document.getElementById('10').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="10"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+           <tr class="disabled">
+        <td> <input type="radio" name="a" required disabled={checkStat == 1 ? true : false}/>02793
+        <td>Rayalaseema spl
+        <td>Tirupathi  
+        <td>Nizamabad jn
+        <td>22:50
+        <td>15:10
+        <td><a class="btnstyle" onclick="document.getElementById('11').innerHTML = getRndInteger(0, 0)">Check</a>
+  
+  <p id="11"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+          <tr>
+        <td><input type="radio" required name="a"> 77616
+        <td>shalimar exp
+        <td>Kolkotha 
+        <td>new delhi
+        <td>00:50
+        <td>05:10
+        <td><a class="btnstyle" onclick="document.getElementById('12').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="12"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+            <tr>
+        <td><input type="radio" required name="a"> 17105
+        <td>visakha exp
+        <td>visakhapatnam 
+        <td>bhubaneswar
+        <td>06:38
+        <td>08:00
+        <td><a class="btnstyle" onclick="document.getElementById('13').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="13"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+             <tr>
+        <td><input type="radio" required name="a"> 02803
+        <td>shatabdi exp
+        <td>Mayiladuturai
+        <td>Coimbatore
+        <td>09:00
+        <td>18:00
+        <td><a class="btnstyle" onclick="document.getElementById('14').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="14"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+               <tr class="disabled">
+        <td><input type="radio" name="a" required disabled={checkStat == 1 ? true : false}/> 02803
+        <td>shatabdi exp
+        <td>Mayiladuturai
+        <td>Coimbatore
+        <td>09:00
+        <td>18:00
+        <td><a class="btnstyle" onclick="document.getElementById('15').innerHTML = getRndInteger(0,0)">Check</a>
+  
+  <p id="15"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+               <tr>
+        <td><input type="radio" required name="a"> 02442
+        <td>NDLS-SC Raj SPL
+        <td>Hazrat Nizamuddin
+        <td>Secunderabad Jn
+        <td>05:10	
+        <td>15:15	
+        <td><a class="btnstyle" onclick="document.getElementById('16').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="16"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+                  <tr>
+        <td><input type="radio" required name="a"> 02452
+        <td>AP express
+        <td>Visakhapatnam 
+        <td>New Delhi
+        <td>21:10	
+        <td>05:15	
+        <td><a class="btnstyle" onclick="document.getElementById('17').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="17"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+                     <tr>
+        <td><input type="radio" required name="a"> 16785
+        <td>Itarsi Nagpur exp
+        <td>Itarsi Junction
+        <td>Nagpur Junction
+        <td>21:10	
+        <td>05:15	
+        <td><a class="btnstyle" onclick="document.getElementById('18').innerHTML = getRndInteger(0,1000)">Check</a>
+  
+  <p id="18"></p>
+  
+  <script>
+  function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+    
+  }
+  </script>
+    </tbody>
+
+  </table>
+  <center><a href="personal.html" class="pn"><button  value="Book Now" class="submitbtns">Book Now</a> <form><button   type="reset" value="clear" class="resetbtns">RESET</button></form></center>
+<br><br><br>
+</body>

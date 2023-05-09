@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .bac {
+          background-image: url('pnrpagebg.jpg');  
+          background-size:cover;
+        }
+        
+        </style>
+   
+   <link rel="stylesheet" href="PNR.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="footer.css">
+
+
+    <title>PNR ENQUIRY</title>
+    </div>
+   
+       
+</head>
+
+<body onload="startTime()" style="text-align: center;">                               
+ <fieldset style="background-image: url(image\ \(1\).png);background-size: cover;"> <img src="logopnr.png" alt="logo" align="left" width="120" height="115">
+       <pre>  <h1 style="color: rgb(245, 14, 14);font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">  <b>INDIAN RAILWAYS PASSENGER RESERVATION ENQUIRY </b>       </h1></fieldset>
+       <br>
+         <center> 
+            <button class="btn" onclick="myalert()"><a href="main.html" class="pn">HOME</a></button>
+            <button class="btn"><a href="login.html" class="pn">LOGIN</a></button>
+            <button class="btn"><a href="availabletrains.html" class="pn">AVAILABLE TRAINS</a></button>
+            <button class="btn"><a href="food/foodmainpage.html" class="pn">FOOD</a></button>
+            <button class="btn"><a href="contactus.html" class="pn">CONTACT US</a></button>
+            
+          </center>  
+        <nav class="bac"><h1 style="background-color:rgb(0, 0, 0);"><marquee behavior="scroll" direction="left"><a  style="color: rgb(255, 255, 255);font-size: 25px; "><b>PNR means passenger name record its 10 Digit Unique Number generated if a passenger book a train ticket via Online or Offline. </b></a></marquee></h1></pre>
+           <br><br><br>
+           <div class="pnr-form" style="margin-left: 800px;" >
+                <form class="signup" name="myform">
+                  <div class="form-title">PNR STATUS</div>
+                  <div class="pnr-data">
+                    
+                    <div class="row">
+                      <input type="text" placeholder="*Enter 10 digit PNR number" name="pnr" id="pnr" maxlength="10" required>
+                    </div>
+                  </div>
+                  <p style="color: red; font-size: small; margin-top: -15px;" id="message"></p>
+                  <div class="rule"></div>
+                  <div class="form-footer">
+                    <a class="pnr-a" href="#"  onclick="return validate_pnr()">Check PNR Status             <span class="fa fa-thumbs-o-up"></span></a>
+                    
+                  </div>
+                  
+                </form>
+            </div><br><br><br><br><br><br><br><br><br></nav>
+            <br><br>
+            <img src="covidpnr.png"  style="background-size: cover;">
+
+            <center> <h1 id="aboutpnr">FAQ</h1>
+                <h2>RAILGO.com – KNOW ABOUT PNR</h2>
+               
+                <div class="wrapper">
+                <!-- Accordion Heading One -->
+                <div class="parent-tab">
+                  <input type="radio" name="tab" id="tab-1" checked>
+                  <label for="tab-1">
+                    <span>What is PNR?</span>
+                    <div class="icon"><i class="fa fa-plus"></i></div>
+                  </label>
+                  <div class="content">
+                    <p>PNR is the most important code while buying a flight ticket. You can find answers to what PNR is, how to use it and how to obtain it, on this page. PNR, PNR number, or PNR code is an electronic detail consisting of numbers and letters given after booking a flight. PNR is the abbreviation of “Passenger Name Record” and it is also used as a booking number on the sectoral basis.</p>
+                  </div>
+                </div>
+            
+                <!-- Accordion Heading Two -->
+                <div class="parent-tab">
+                  <input type="radio" name="tab" id="tab-2">
+                  <label for="tab-2">
+                    <span>How to Use a PNR Code?</span>
+                    <div class="icon"><i class="fa fa-plus"></i></div>
+                  </label>
+                  <div class="content">
+                    <p>PNR is the abbreviation of Passenger Name Record and it is a digital certificate allowing passengers to do online check-in or manage their bookings in a short time. Also used as booking number, Passenger Name Record is a code with 6 alphanumeric characters (letters and numbers are used together). This code allows passengers to manage their bookings such as reprinting a lost flight ticket or printing the ticket at the airport. For this reason, passengers are required to keep this code after purchasing the flight ticket. Passengers can buy additional baggage, change their contact details or purchase additional services on Manage My Booking section.
+                    </p>
+                  </div>
+                </div>
+            
+                <!-- Accordion Heading three -->
+                <div class="parent-tab">
+                    <input type="radio" name="tab" id="tab-3">
+                    <label for="tab-3">
+                      <span>How to Get a PNR Code?</span>
+                      <div class="icon"><i class="fa fa-plus"></i></div>
+                    </label>
+                    <div class="content">
+                      <p>After purchasing your ticket through the internet, PNR code including your personal details about your flight is sent to you through email or SMS. To learn your PNR code, please keep that SMS or check the relevant section of the digital file sent via email. It is of great significance for passengers purchasing their tickets online to give their phone numbers and emails correct. It is advised to always double-check these contact details while purchasing a flight ticket.
+                      </p>
+                    </div>
+                  </div>
+            
+                <!-- Accordion Heading Four -->
+                <div class="parent-tab">
+                  <input type="radio" name="tab" id="tab-4">
+                  <label for="tab-4">
+                    <span>Where is Your PNR Code?</span>
+                    <div class="icon"><i class="fa fa-plus"></i></div>
+                  </label>
+                  <div class="content">
+                    <p>Passengers can find their PNR code on email or SMS including their flight details. PNR is required for online check-in and it is the fastest way to reach flight details. Online check-in shortens the amount of time spent at the airport and helps passengers to have a comfy flight experien</p>
+                  </div>
+                </div>
+              </div>
+            </body>
+            <footer class="site-footer">
+                <div id="footer">
+                    <div class="tomottoWrap">
+                      <div id="tomotto" class="colorchange">
+                        “ Rail-go A Destination for safe journey! ”
+                      </div>
+                    </div>
+                    <div class="lookWrap">
+                      <div id="look">
+                        <div class="section">
+                          <h3>Support</h3>
+                          <a href="#">FAQs</a>
+                          <a href="#">Contact Us</a>
+                          <a href="#">Alerts</a>
+                          <a href="#">Media</a>
+                          <a href="#">Privacy Policy</a>
+                          <a href="#">Partners</a>
+                          <a href="#">cancellation policy</a>
+                          
+            
+                         </div>
+                        
+                        <div class="section">
+                          <h3>Features</h3>
+                          <a href="#">Live Train Status</a>
+                          <a href="#">PNR status</a>
+                          <a href="#">Train Time Table</a>
+                          <a href="#">Seat Availability</a>
+                          <a href="#">Train between Stations</a>
+                          <a href="#">Travel Blogs</a>
+                          <a href="#">Feedback</a>
+                          
+                        </div>
+                        <div class="section">
+                          <h3>Book with us</h3>
+                          
+                          <a href="#">Train tickets</a>        
+                          <a href="#">Food on train</a>
+                          
+                        </div>
+                        <div class="section">
+                          <h3>About Us</h3>
+                          <a href="#">About</a>
+                          <a href="#">Testimonials</a>      
+                          <a href="#">The Team</a>        
+                        </div>      
+                      </div>
+                    </div><hr>
+                    <div id="tomotto" style="float: left; margin-left: -50px; font-size: larger;">
+                        Get Connected With Us <br>
+                      </div>
+                      <ul class="social-icons" style="background-color: #26272b;">
+                        <li><a class="facebook" href="https://www.facebook.com/IRCTCofficial/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="https://twitter.com/IRCTCofficial"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="https://www.instagram.com/irctc.official/?igshid=yyg5byow704l"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="https://www.linkedin.com/company/irctcofficial/"><i class="fa fa-linkedin"></i></a></li>   
+                      </ul>
+                    
+                  </div>
+                </footer><br><br><br><br><br><br><br><br>
+<h3 style="font-weight: bold;">DOWNLOAD OUR APP NOW!! </h3><a href="https://play.google.com/store/apps/details?id=cris.org.in.prs.ima"><img src="googleplay.png" height="60"width="160"></a><a href="https://apps.apple.com/in/app/irctc-rail-connect/id1386197253"><img src="appstore.png"height="50"width="160"></a>
+<script src="validation.js"></script>
+            </body>       
+<tfoot>
+    <pre style="font-family: Arial, Helvetica, sans-serif; text-align: center;">©️ Copyright 2021, All Rights Reserved-railgo e-ticketing system</pre>
+    </tfoot>
+    
+
+</html>

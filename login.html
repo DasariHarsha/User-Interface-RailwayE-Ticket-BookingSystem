@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Login </title>
+    <link rel="stylesheet" href="pnr.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="validation.js"></script>
+
+
+    <style>
+        nav {
+            background-image: url("https://i.pinimg.com/originals/b9/6a/8f/b96a8fae9bb7bcd78c3e48c6375f1317.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center;
+        }
+        </style>
+        <img src="logo.png" alt="logo" align="left" width="100" height="85">
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+</head>        
+      <body>
+        <center> 
+            <br>
+            <button class="btn" onclick="myalert()"><a href="main.html" class="pn">HOME</a></button>
+            <button class="btn"><a href="PNR.html" class="pn">PNR STATUS</a></button>
+            <button class="btn"><a href="availabletrains.html" class="pn">AVAILABLE TRAINS</a></button>
+            <button class="btn"><a href="food/foodmainpage.html" class="pn">FOOD</a></button>
+    </center>
+
+      
+
+ <nav>  <h1 style="background-color:rgba(0, 0, 0, 0.918);"><marquee behavior="scroll" direction="left"><a  style="color: rgb(255, 255, 255);font-size: 25px; "><b> Welcome to Rail-Go Register.When creating a new User or modifying an existing Users password ,Must contain at least one English uppercase character.English lowercase character.one non-alphanumeric character </b></marquee></h1>   
+</head>
+<b>
+    <form class="form" name="myform" onsubmit="return validate_password()">
+        <h2>Login</h2>
+        <p>Please Enter Your User ID and Password</p>
+        <p type="User-ID"><input type="email" placeholder="Enter User ID" required></input></p>
+       
+        <p type="Password"><input type="password" name="pass" placeholder="password" maxlength="18"></input></p><p style="color: red; font-size: small;" id="message"></p>  
+        
+         
+          <p><a href="forgotpassword.html" style="text-decoration: none; color: #dd6b29;"><i>Forgot Password</i></a></p>                                                                                                                                                                                                                    
+           
+    <button><input type="submit" style="color: white;" value="Confirm"></button>
+    <button  onclick="alert('THE ENTERED DATA WILL BE CLEARED;')"><input type="reset" style="color: white;" value="cancel"></button> 
+    
+    <p><i>   If you don't have an account? <a href="signup.html" style="text-decoration: none; color: rgb(0, 26, 255);">Sign up</a></i></p>
+    </form>
+<br><br><br>
+    </nav> 
+
+<ul class="social-icons" style="background-color: #26272b; color: white;">
+    <br>GET CONNECTED WITH US<br><br>
+    <li><a class="facebook" href="https://www.facebook.com/IRCTCofficial/"><i class="fa fa-facebook"></i></a></li>
+    <li><a class="twitter" href="https://twitter.com/IRCTCofficial"><i class="fa fa-twitter"></i></a></li>
+    <li><a class="dribbble" href="https://www.instagram.com/irctc.official/?igshid=yyg5byow704l"><i class="fa fa-instagram"></i></a></li>
+    <li><a class="linkedin" href="https://www.linkedin.com/company/irctcofficial/"><i class="fa fa-linkedin"></i></a></li>   
+  </ul>
+ <center>  <h3 style="font-weight: bold;">DOWNLOAD OUR APP NOW!! </h3><a href="https://play.google.com/store/apps/details?id=cris.org.in.prs.ima"><img src="googleplay.png" alt="Google Pay" height="60"width="160"></a><a href="https://apps.apple.com/in/app/irctc-rail-connect/id1386197253"><img src="appstore.png" alt="Appstore" height="50" width="160"></a></center> 
+    
+</body>
+<tfoot>
+    <pre style="font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: small;">©️ Copyright 2021, All Rights Reserved-railgo e-ticketing system</pre>
+    </tfoot>
+</html>

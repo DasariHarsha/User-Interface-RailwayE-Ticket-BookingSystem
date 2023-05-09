@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url("style.CREDIT.css");
+    </style>
+	<link rel="stylesheet" href="buttonstyle.css">
+</head>
+
+
+<body>
+
+
+	<form name="myform" onsubmit="return validate_card()" action="ticket.html" target="_blank">
+<div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">CREDIT</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">DEBIT</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="group">
+					
+					<label for="user" class="label">card number</label>
+					<input id="user" name="card" type="text" class="input" maxlength="16"><p style="color: red; font-size: small; " id="message"></p>
+					
+				</div>
+				<div class="group">
+					<label for="pass" class="label">CVV</label>
+					<input id="pass" name="cvv" maxlength="3" type="password" class="input" data-type="password"><p style="color: red; font-size: small; " id="message1"></p>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">EXPIRATION DATE</label>
+					<input id="pass" type="date" class="input" data-type="input" required>
+				</div>
+				<div class="group">
+					<br>
+					<center><input type="submit" value="Pay Now"  class="btn1"></center>
+				</div>
+				
+			</div>
+		</form>
+		<form name="myform1" onsubmit="return validate_card_deb()" action="ticket.html" target="_blank">
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user1" class="label">card number</label>
+					<input id="user1" name="card1" type="text" maxlength="16" class="input"><p style="color: red; font-size: small; " id="message2"></p>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">CVV</label>
+					<input id="pass" name="cvv1" type="password" maxlength="3" class="input" data-type="password"><p style="color: red; font-size: small; " id="message3"></p>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">EXPIRATION DATE</label>
+					<input id="pass" type="date" class="input" data-type="input" required>
+				</div>
+				<div class="group">
+					<br>
+					<center><input type="submit" value="Pay Now" class="btn1"></center>
+				</div>
+				
+</div>
+
+</form>
+
+<script>
+	function validate_card()
+        {
+             let x = document.forms["myform"]["card"].value;
+             let x1 = document.forms["myform"]["cvv"].value;
+
+        if(x=="" ){
+        document.getElementById("message").innerHTML = "**Enter Card Number";
+        return false;
+       }
+       if (isNaN(x) || x.length<16) {
+        document.getElementById("message").innerHTML = "**Invalid Card Number";
+        return false;
+         }
+		 if(x1=="" ){
+        document.getElementById("message1").innerHTML = "**Enter CVV";
+        return false;
+       }
+
+	 if (isNaN(x1) || x1.length<3) {
+        document.getElementById("message1").innerHTML = "**Invalid CVV";
+        return false;
+         }
+	}
+</script>
+
+
+<script>
+
+	function validate_card_deb()
+        {
+             let x = document.forms["myform1"]["card1"].value;
+             let x1 = document.forms["myform1"]["cvv1"].value;
+
+        if(x=="" ){
+        document.getElementById("message2").innerHTML = "**Enter Card Number";
+        return false;
+       }
+       if (isNaN(x) || x.length<16) {
+        document.getElementById("message2").innerHTML = "**Invalid Card Number";
+        return false;
+         }
+		 if(x1=="" ){
+        document.getElementById("message3").innerHTML = "**Enter CVV";
+        return false;
+       }
+
+	 if (isNaN(x1) || x1.length<3) {
+        document.getElementById("message3").innerHTML = "**Invalid CVV";
+        return false;
+         }
+	}
+</script>
+
+</body>
+
+</html>

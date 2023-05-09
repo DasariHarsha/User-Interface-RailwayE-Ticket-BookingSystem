@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+  <html lang="en">
+        <head>
+          <link rel="stylesheet" href="footer.css">
+           
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <title> Rail go e-ticket </title>
+             <meta charset = utf-8>
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+             
+             <link rel="stylesheet" href="stylemain.css">
+             <style>
+                .background{
+                  background-image: url('Trainh.png');  
+                  background-size:cover;
+                  
+                }
+                table {
+  border-spacing: 20px;
+}
+               </style>
+
+         </head>
+         <body onload="startTime()">
+             
+              <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:48px;color:rgb(0, 0, 0)"></i></button>
+              <fieldset style="background-image: url(strip1.png); background-repeat: no-repeat; background-size: cover;">    <img src="logopnr.png" alt="logo" width="130" height="110"> <div id="txt"  style="color: white; float: right; font-size: x-large; font-weight: bold;"></div>                                                      
+        <pre>                                                                                                                                                                                   <button type="button" onclick="alert('ALL PASSENGERS ARE INFORMED TO CARRY A SANITIZER, WEAR MASK AND FOLLOW ALL THE NORMS AND PROCEDURES OF COVID-19 &#128567; &#128567;'); " style= "background-color: rgb(231, 51, 96); color: white; ">COVID-19 ALERT!!</button> </pre></fieldset>
+        <center>
+          <br>
+          
+            <button class="btn" onclick="myalert()"><a href="main.html" class="pn">HOME</a></button>
+            <button class="btn"><a href="login.html" class="pn">LOGIN</a></button>
+            <button class="btn"><a href="trainstatus.html" class="pn">TRAIN STATUS</a></button>
+            <button class="btn"><a href="PNR.html" class="pn">PNR STATUS</a></button>
+            <button class="btn"><a href="food/foodmainpage.html" class="pn">FOOD</a></button>
+            <button class="btn"><a href="contactus.html" class="pn">CONTACT US</a></button>
+            <div class="dropdown"> <button class="btn1"><a href="alerts/alerts main.html" class="pn">ALERTS</a></button><div class="dropdown-content" > <a href="alerts/alerts main2.html">Daily Alerts</a> <a href="alerts/alerts main 3.html">Updates</a><a href="alerts/alerts main 4.html">General Info</a><a href="alerts/alerts main 5.html">Special Trains</a><a href="alerts/alerts main 6.html">Cancelled/Diverted Trains </a></div></div>
+            
+        
+<br><br>
+
+          </center>             
+          <ul class="background"><marquee behavior="scroll" direction="left" style="background-color:rgb(29, 28, 28);"><h1 style="color: rgb(245, 242, 237);font-size: 25px; "><b>Welcome to Rail-Go. A destination for safe journey!! </b></h1></marquee>
+            
+          <div class="form" >
+            <div class="row">
+              <div class="col">
+                <div class="container">
+                  <form action="#">
+                    <div class="row">
+                      <div class="col">
+                        <label for="from"><i class="fa fa-location-arrow"></i> FROM</label>
+                        <input type="text" id="from" name="FROM" placeholder="FROM" required>
+                           
+                        <label for="to"><i class="fa fa-map-marker"></i> TO</label>
+                        <input type="text" id="to" name="TO" placeholder="TO" required>
+                        <label for="class"><i class="fa fa-briefcase"></i> CLASS</label>  
+                          <select id="class" name="ALL CLASS" class="select" required>
+                            <option value="sel" selected>  Select </option>
+                            <option value="Anubhuti class">anubuthi class</option>
+                            <option value="First class">First class</option>
+                            <option value="AC 2 Tier">AC 2 Tier</option>
+                            <option value="AC 3 Tier">AC 3 Tier</option>
+                            <option value="Sleeper (SL)">Sleeper (SL)</option>
+                            <option value="AC Chair car (CC)">AC Chair car (CC)</option>
+                            <option value="Second Sitting (2S)">Second Sitting (2S)</option>
+                            <option value="Exec. Chair Car (EC">Exec. Chair Car (EC)</option>
+                         </select>
+                        <div class="row">
+                          <div class="col"> 
+                          </div>
+                          <div class="col"> 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <label for="depart" style="margin-left: 70px;"><i class="fa fa-calendar"></i> DEPART</label>
+                        <input type="DATE" id="depart" name="DATE" class="dte" required><br><br>
+                        <label for="depart" style="margin-left: 70px;"><i class="fa fa-calendar"></i> RETURN</label>
+                        <input type="DATE" id="depart" name="DATE" class="dte" required><br><br>
+                        <label for="class" style="margin-left: 70px;"><i class="fa fa-th-large"></i> GENERAL</label>  
+                          <select id="class" name="ALL CLASS" class="select1" required>
+                            <option value="sel" selected>Select</option>
+                            <option value="GEN"> General</option>
+                            <option value="LADIES">Ladies</option>
+                            <option value="LOWER BERTH/SR.CITIZEN">Lower Berth/Sr.Citizen</option>
+                            <option value="DIVYAANG">Divyaang</option>
+                            <option value="TATKAL">Tatkal</option>
+                            <option value="PREMIUM TATKAL">Premium Tatkal</option>
+                         </select>
+                        <div class="row">
+                          <div class="col"> 
+                          </div>
+                          <div class="col">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                     <label for="RT" class="radio" >   
+                    <input type= "radio" id="RT" name="Round Trip" value= "round trip" class="radio">One way
+                    <input type= "radio" id="RT" name="Round Trip" value= "round trip" class="radio">Round Trip
+                    </label>
+                    <br>
+                    <label class="checkbox">
+                      <input type="checkbox"  name="sameadr"> Railway Pass Concession         
+                      <input type="checkbox"  name="sameadr"> Flexible With Date<br><br>
+                      <input type="checkbox"  name="sameadr"> Train With Available Berth
+                    </label>
+                    <input type="submit" value="Search Trains" class="btnform">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <h4 style="font-family: Arial, Helvetica, sans-serif; text-align: center; color: white; font-weight: bold; margin-right: 460px;">NOTE: Automatic refund of full train fare in case of train cancellation by railways.<br> No need to cancel such tickets.</h4>                       </b>
+          
+         </ul><br><center><fieldset  style="height: 0.5cm;width: 10cm;align-content: center;color: rgb(255, 255, 255);background-color: rgba(97, 172, 201, 0.897);font-family: sans-serif;">PROCEDURE TO BOOK TICKET</fieldset></center></h2><br><center><iframe src="personalframe.html" name="iframe_a" height="500px" width="70%" title="Booking procedure" style="border-color: orange;"></iframe></center><br><br>
+
+   <fieldset style="background-image: url('background.gif');background-size:cover; width: 30cm;"><h2 style="text-align: center; color: rgb(253, 253, 253); font-size: xx-large;"><center><fieldset  style="height: 0.5cm;width: 10cm;align-content: center;color: rgb(255, 255, 255);background-color: rgba(97, 172, 201, 0.897);font-family: sans-serif;"> E-RAILWAY SERVICES</fieldset></center></h2>
+
+<pre style="font-family: Arial, Helvetica, sans-serif; font-size: medium; font-weight: bold; color: rgb(255, 255, 255); font-size: larger;">                                                                                       <a href="food/foodmainpage.html"><img src="ecatering.png" width="235" height="220" class="zoom" alt="cttering"></a>                     <a href="https://www.air.irctc.co.in/"><img src="etravel.png" width="235" height="220" class="zoom" alt="travel"></a>
+                                                                                                     E-CATERING                                                              E-TRAVEL
+                                                                                        <a href="#holiday"><img src="holiday.png" width="200" height="200" class="zoom" alt="holiday"></a>                     <a href="https://www.irctctourism.com/gallery/"><img src="gallery.png" width="235" height="220" class="zoom" alt="gallery"></a>
+                                                                                                        HOLIDAYS                                                          OUR GALLERY                                                                                           
+</pre></fieldset><br><center><img src="stripcovid.png" alt="covid"></center>
+<fieldset style="background-image: url('blogbg.jpg');background-repeat: no-repeat;background-size: cover;">
+<h2 style="text-align: center; color: rgb(255, 255, 255); font-size: xx-large;" id="holiday">HOLIDAYS</h2>
+
+<table>
+<tr >
+<td><img src="1.gif" class="zoom2" alt="location"></td>
+<td><img src="4.gif" class="zoom2" alt="location"></td>
+<td><img src="2.gif" class="zoom2" alt="location"></td>
+<td><img src="3.gif" class="zoom2" alt="location"></td>
+</tr>
+<tr>
+<td><h2>MAHARAJAS EXPRESS</h2><p>Redefining Royalty, Luxury and Comfort, Maharaja’s express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”.
+        It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.Maharajas' Express Train Tour India is unique and journey to be cherished forever. It recreates the Lifestyle of Royal Era. Maharajas' Express Train Tours India is of 
+        approximately of week s duration where one can see Treasures of India, Indian Splendor, and Heritage of India etc. Luxury Charter Tours India is provided to clients from across the globe. Also these tours are specially designed for our esteemed clients who look forward for value 
+        for money, comfort and luxury.Luxury Train in India has got many awards for its gracious hospitality. It offers the traveler luxury and comfort. The Presidential Suite is called Navratna which means Nine Precious Jewels. Luxury Train in India was named after the precious jewels of 
+        different Maharajas (Kings). . Indian Maharaja Train has 14 Guest Carriages namely Moti (Pearl), Manik (Ruby), Heera (Diamond), Panna (Emerald), Neelam (Blue Sapphire) etc.</p>
+</td>
+<td><h2>INTERNATIONAL TOURS</h2><p>Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical
+        insurance to give you a hassle-free and memorable experience.We have an excellent reputation when it comes to delivering our promise of planning a great holiday at an economical rate. A lot of our customers vouch for our international tour packages as they have had the best experiences
+         of their life without any hassle and stress of planning a holiday. All they need to do is book their international holiday packages with us and pack their bags. We have a plethora of world tour packages to choose from, and our hottest selling destinations include pristine Mauritius, clean
+          and green Singapore, buzzing Thailand and exotic Bali. A lot of Indian travelers love to book their first international holiday package to these destinations, as they offer them something more than meets the eye within their budget.While India is home to a lot of beautiful destinations, it 
+          is always interesting to know what lies beyond. The world is blessed with beautiful places and sights, which will have you gasping in disbelief as you fawn over their natural beauty. </p>
+</td>
+<td><h2>DOMESTIC PACKAGES</h2><p>India is so geographically varied that every travel enthusiast in the world would love to take India tour at least once in their lifetime. From lush green forests to daunting deserts, pristine beaches to mighty snow-capped mountains, from Chardham of North to Meenakshi of Madurai. 
+       India is rich with varied landscapes; each one more attractive than the other.Apart from the geographical undulations, the diversity in the culture, food, language and even flora and fauna found in the various regions of India is quite fascinating. This affluence is the reason why India holiday packages are 
+       so popular.Thomas Cook provides you with an extensive range of India tour packages to suit your desires. When it comes to choosing the best places to visit in India, our holiday expert will help you choose the most sought-after holiday destination. Covering almost every destination in India, these incredible 
+       India tour packages are apt to take you to enthralling hill stations, quaint hamlets, cosmopolitan metros and rejuvenating coastal towns. With our distinct packages, you can choose to take a relaxing break for a few days or go on an adventure spree around the many thrilling activity hubs around the country. 
+       Not to forget our India travel guides which will allow you to indulge in top sightseeing and activities in any part of India.Thomas Cook offers a wide range of exciting India travel packages.</p>
+</td>
+<td><h2>BEST INDIAN TRAIN TOUR PACKAGES</h2><p>India Rail Tour acquaints a tourist with its earthy exuberance and grounded culture. Spanning over 63,000 kms route and 6,909 stations, India Train Tour celebrates the glory of Railways in India, which is fourth largest in the world and second largest in the world in terms
+        of passenger aboard.The wide variety, sheer size and geographical diversity of India can be best experienced through train journeys. The excitement, the thrills and the joys of travelling via India Trains is truly a mesmerising way to explore the country.Understands the inevitability of a 'Train' as a joyful mode
+        of travelling. With the understanding and 27 years of expertise, the company presents to a great mix of exclusive train itineraries suiting every need. Explore More...The Indian train trail has in it the century old locomotives taking a tourist to the timeless vintage era. Travelling in hill trains like 
+        Darjeeling-Himalayan Express and those operating in Shimla and Ooty are a great way to explore the cool terrains on narrow track lines.The Luxury Trains like Palace on Wheels, Maharaja Express and Golden Chariot introduces a tourist with the indulgence of the country. Along with this, the fastest rail 
+        connectivity through Rajdhani, Shatabdi and most recently Suburban Trains-Metros contribute to the intricate Indian Railway network.Trains are a lifeline to India.Enjoy with our family tours</p>
+</tr>
+</table></fieldset><hr>
+<center><table>
+  <tr>
+  <td rowspan="10"><img src="mobile.png" alt="mobile"></td>
+  <td><h2>Highly rated apps for irctc train booking</h2>
+      <br><h1 style="text-align: center;">Download now!</h1></td><td></td>
+  </tr>
+  <tr><td><a href="https://play.google.com/store/apps/details?id=cris.org.in.prs.ima"><img src="googleplay.png" class="zoom1" alt="google"></a><a href="https://apps.apple.com/in/app/irctc-rail-connect/id1386197253"><img src="appstore.png" class="zoom1" alt="appstore"></a></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td><td></td></tr>
+  </table></center>
+  
+  
+
+  <a class="open-button zoom1" onclick="openForm()"><img height="65" width="75" src="messenger.png"></a></button>
+
+<div class="chat-popup" id="myForm">
+  <form action="#" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btnch">Send</button>
+    <button type="button" class="btnch cancel" onclick="closeForm()">Close</button>
+  </form>
+</div> <br>
+  <br><br>
+  
+  <footer class="site-footer">
+    <div id="footer">
+        <div class="tomottoWrap">
+          <div id="tomotto">
+            “In such seconds of decision entire futures are made.” 
+      ― Dan Simmons, Hyperion
+          </div>
+        </div>
+        <div class="lookWrap">
+          <div id="look">
+            <div class="section">
+              <h3>Support</h3>
+              <a href="#">FAQs</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Alerts</a>
+              <a href="#">Media</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Partners</a>
+              <a href="#">cancellation policy</a>
+              
+
+             </div>
+            
+            <div class="section">
+              <h3>Features</h3>
+              <a href="#">Live Train Status</a>
+              <a href="#">PNR status</a>
+              <a href="#">Train Time Table</a>
+              <a href="#">Seat Availability</a>
+              <a href="#">Train between Stations</a>
+              <a href="#">Travel Blogs</a>
+              <a href="#">Feedback</a>
+              
+            </div>
+            <div class="section">
+              <h3>Book with us</h3>
+              
+              <a href="#">Train tickets</a>        
+              <a href="#">Food on train</a>
+              
+            </div>
+            <div class="section">
+              <h3>About Us</h3>
+              <a href="#">About</a>
+              <a href="#">Testimonials</a>      
+              <a href="#">The Team</a>        
+            </div>      
+          </div>
+        </div><hr>
+        <div id="tomotto" style="float: left;">
+            © Copyright 2021, All Rights Reserved-railgo e-ticketing system
+          </div>
+          <ul class="social-icons" style="background-color: #26272b;">
+            <li><a class="facebook" href="https://www.facebook.com/IRCTCofficial/"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/IRCTCofficial"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="https://www.instagram.com/irctc.official/?igshid=yyg5byow704l"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/company/irctcofficial/"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        
+      </div>
+    </footer> 
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+<script type="text/javascript">/*
+    window.onload = function(){ 
+                    alert("ALL PASSENGERS ARE INFORMED TO CARRY A SANITIZER, WEAR MASK AND FOLLOW ALL THE NORMS AND PROCEDURES OF COVID-19");
+                    }*/
+    </script>
+    
+
+    <script>
+      function startTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML = "Time IST: "+ h + ":" + m + ":" + s;
+        setTimeout(startTime, 1000);
+        
+      }
+      
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+      }
+      </script>
+
+
+<script>
+  //chat
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+    
+
+
+    <script>
+      //alert confirm
+      function myalert() {
+        confirm("Do you Really want to leave the page changes made in page will be erased.... ");
+    }
+      
+    </script>
+
+
+   
+</body>
+</html>

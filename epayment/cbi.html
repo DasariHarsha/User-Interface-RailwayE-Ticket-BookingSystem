@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url("bank.css");
+        </style>
+        <body >
+
+            
+            <form name="myform" onsubmit="return validate_pass()" action="ticket.html" target="_blank">
+
+            
+            <center>
+            <div class="l">
+               <br>
+                <strong><img src="cbi.jpeg" class="zoom" alt="CBI" style="width:65px;height:65px;  border-radius: 50px;" ><h1 style="font-size: x-large;">CENTRAL BANK</h1></strong>  
+           
+                <input type="text" placeholder="User Id" id="username">  
+                <input type="password" name="pass" placeholder="Password" id="Password"><p style="color: red; font-size: small;" id="message"></p>      
+
+                <input type="submit" value="PAY NOW">
+        </center>
+            
+            </div>
+            <div class="shadow"></div>
+        </center>
+
+        <script>
+            function validate_pass()
+                {
+                let x = document.forms["myform"]["pass"].value;
+                if (x=="") {
+                    document.getElementById("message").innerHTML = "**Enter password";
+                  return false;
+                }   
+                  }
+        </script>
+        
+        </body>
+    </head>
+</html>

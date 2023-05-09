@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="validation.js"></script>
+           <link rel="stylesheet" href="footer.css">
+    <meta charset="utf-8">
+    <title>Train Status </title>
+    <style>
+        nav {
+            background-image: url("black\ train.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: left;
+        }
+
+        .btn{
+  
+  width: 14%;
+  border: none;
+  background-color: rgb(29, 28, 28);
+  color: white;
+  padding: 14px 28px;
+  
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10cm;
+  box-shadow: 0 4px rgb(241, 102, 38);
+}
+
+.pn{
+          text-decoration: none;
+          color: rgb(255, 253, 253);
+      }
+
+  
+  .btn:hover, .btn:active a{
+    background-color: rgb(241, 102, 38);
+    color: black;
+  }
+
+  .btn:hover {
+    box-shadow:  4px 4px 6px 0 rgba(209, 204, 204, 0.938),
+                -4px -4px 6px 0 rgba(135, 136, 138, 0.877), 
+      inset -4px -4px 6px 0 rgba(56, 52, 52, 0.829),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, 0.623);
+  }
+        </style>
+        <img src="logo.png" alt="logo" align="left" width="100" height="85">
+        <link rel="stylesheet" href="train_status.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+</head><br><br>        
+<center> 
+    <button class="btn" onclick="myalert()"><a href="main.html" class="pn">HOME</a></button>
+    <button class="btn"><a href="login.html" class="pn">LOGIN</a></button>
+    <button class="btn"><a href="availabletrains.html" class="pn">AVAILABLE TRAINS</a></button>
+    <button class="btn"><a href="food/foodmainpage.html" class="pn">FOOD</a></button>
+    <button class="btn"><a href="contactus.html" class="pn">CONTACT US</a></button>
+    
+  </center> 
+
+ <nav>  <h1 style="background-color:rgba(0, 0, 0, 0.918);"><marquee behavior="scroll" direction="left"><a  style="color: rgb(255, 255, 255);font-size: 25px; "><b> Welcome to Rail-Go Register.When creating a new User or modifying an existing Users password ,Must contain at least one English uppercase character.English lowercase character.one non-alphanumeric character </b></marquee></h1>   
+</head>
+<b><body>
+    <form class="form" name="myform" onsubmit="return validate_trainnumber()">
+        <h2>Train Status</h2>
+        <p type="Train Number"><input type="text" name="trnum" placeholder="Enter Train Number" maxlength="5"></input></p>
+        <p style="color: red; font-size: small; margin-top: -10px;" id="message"></p>
+        <p style="font-family: 'Times New Roman', Times, serif;text-align: center;">.....................................................OR.....................................................</p>
+        <p type="From"><input placeholder="Arrival"></input></p>  
+        <p type="To"><input placeholder="Depature"></input></p>
+        For live Train Running status <a href="#" style="color: rgb(189, 41, 41);"><i>Click Here</i></a>                                                                                                                                                                                                                                    
+    <button><input type="submit" value="SEARCH"></button> 
+
+        
+    </form>
+<br><br><br>
+    </nav> 
+
+
+<p id="tomotto" style="float: left; color: white; margin-left: -50px; font-size: larger;" >
+    Get Connected With Us
+</p>
+  <ul class="social-icons" style="background-color: #26272b;">
+    <li><a class="facebook" href="https://www.facebook.com/IRCTCofficial/"><i class="fa fa-facebook"></i></a></li>
+    <li><a class="twitter" href="https://twitter.com/IRCTCofficial"><i class="fa fa-twitter"></i></a></li>
+    <li><a class="dribbble" href="https://www.instagram.com/irctc.official/?igshid=yyg5byow704l"><i class="fa fa-instagram"></i></a></li>
+    <li><a class="linkedin" href="https://www.linkedin.com/company/irctcofficial/"><i class="fa fa-linkedin"></i></a></li>   
+  </ul>
+
+</p>
+</footer>
+ <center>  <h3 style="font-weight: bold;">DOWNLOAD OUR APP NOW!! </h3><a href="https://play.google.com/store/apps/details?id=cris.org.in.prs.ima"><img src="googleplay.png" alt="Google Pay" height="60"width="160"></a><a href="https://apps.apple.com/in/app/irctc-rail-connect/id1386197253"><img src="appstore.png" alt="Appstore" height="50" width="160"></a></center> 
+  
+ 
+</body>
+<tfoot>
+    <pre style="font-family: Arial, Helvetica, sans-serif; text-align: center; font-size: small;">©️ Copyright 2021, All Rights Reserved-railgo e-ticketing system</pre>
+    </tfoot>
+</html>

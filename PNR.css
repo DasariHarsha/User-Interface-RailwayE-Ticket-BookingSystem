@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.wrapper{
+  max-width: 1100px;
+  padding: 0 20px;
+}
+.wrapper .parent-tab,
+.wrapper .child-tab{
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.18);
+}
+.wrapper .parent-tab label,
+.wrapper .child-tab label{
+  background: #064181;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+.wrapper .parent-tab label:hover{
+  background: #006fe6;
+}
+.parent-tab input:checked ~ label,
+.child-tab input:checked ~ label{
+  border-radius: 3px 3px 0 0;
+  background: #006fe6;
+}
+.wrapper label span{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+.wrapper .child-tab label span{
+  font-size: 17px;
+}
+.parent-tab label .icon{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  color: #007bff;
+  display: block;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+.wrapper .child-tab label .icon{
+  height: 27px;
+  width: 27px;
+}
+.parent-tab label .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.parent-tab input:checked ~ label .icon i:before,
+.child-tab input:checked ~ label .icon i:before{
+  content: '\f068';
+}
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content{
+  max-height: 0px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  transition: all 0.4s ease;
+}
+.parent-tab input:checked ~ .content,
+.child-tab input:checked ~ .sub-content{
+  max-height: 100vh;
+}
+.tab-3 input:checked ~ .content{
+  padding: 15px 20px;
+}
+.parent-tab .content p,
+.child-tab .sub-content p{
+  padding: 15px 20px;
+  font-size: 20px;
+}
+.child-tab .sub-content p{
+  font-size: 15px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
+
+.pnr-form{
+    color: white;
+    width: 500px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  }
+    
+    .form-title{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80px;
+      font-size: 20px;
+      font-weight: bold;
+      background: #3399ff;
+      border-radius: 10px 10px 0 0;
+    }
+    
+    .pnr-data{
+      padding: 20px;
+  }
+      
+      .row{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+  }
+        
+        input[type="text"]{
+          appearance: none;
+          width: 90%;
+          margin: 0 15px;
+          height: 25px;
+          padding: 5px 15px;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+          background: #e8ebed;
+          color: #576366;
+          font-size: 14px;
+        }
+    
+    .rule{
+      height: 2px;
+      background: #e8ebed;
+      margin: 0px 35px;
+    }
+    
+    .form-footer{
+      margin: 0 25px 15px 25px;
+      padding: 15px 10px;
+  }
+      
+      .pnr-a{
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 15px;
+        background: #023562;
+        margin-right: 10px;
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+      }
+
+      .btn{
+  
+        width: 14%;
+        border: none;
+        background-color: rgb(29, 28, 28);
+        color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 10cm;
+        box-shadow: 0 4px rgb(241, 102, 38);
+      }
+      
+      .pn{
+          text-decoration: none;
+          color: rgb(255, 253, 253);
+      }
+      
+        
+        .btn:hover, .btn:active a{
+          background-color: rgb(241, 102, 38);
+          color: black;
+        }
+      
+        .btn:hover {
+          box-shadow:  4px 4px 6px 0 rgba(209, 204, 204, 0.938),
+                      -4px -4px 6px 0 rgba(135, 136, 138, 0.877), 
+            inset -4px -4px 6px 0 rgba(56, 52, 52, 0.829),
+            inset 4px 4px 6px 0 rgba(0, 0, 0, 0.623);
+        }
+        
+       
